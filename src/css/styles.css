@@ -18,6 +18,7 @@
 @import url('./footer.css'); */
 
 
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -29,7 +30,6 @@ body {
 header {
   text-align: center;
   margin: 20px 0;
-  background-color:#fff;;
 }
 
 form {
@@ -41,7 +41,6 @@ form {
 form input {
   width: 371px;
   height: 40px;
-  font-family: Arial, sans-serif;
   font-size: 16px;
   padding: 8px;
   border: 1px solid #ccc;
@@ -51,19 +50,16 @@ form input {
 
 form button {
   width: 91px;
- 
   cursor: pointer;
   background-color: #4e75ff;
   border: none;
   border-radius: 8px;
- 
-  
-  font-family: var(--font-family);
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
+  font-size: 16px;
+  color: #fff;
+  line-height: 150%;
 letter-spacing: 0.04em;
-color: #fff;
+font-family: var(--font-family);
+font-weight: 500;
 }
 
 form button:hover {
@@ -79,6 +75,7 @@ form button:hover {
   max-width: 1440px;
   background-color: #fff;
   list-style: none;
+
 }
 
 .gallery-item {
@@ -128,7 +125,6 @@ form button:hover {
   transform: scale(1.1) translateY(-5px); 
   filter: brightness(1.2);
 }
-
 .custom-toast {
   border-bottom: 2px solid #ffbebe;
   border-radius: 4px;
@@ -140,6 +136,26 @@ form button:hover {
   box-shadow: none !important; 
   font-size: 14px !important;
 }
+.load-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.load-more-btn:hover {
+  background-color: #6c8cff;
+}
+
+.load-more-btn.is-hidden {
+  display: none;
+}
+
 .loader {
   display: none;
  
@@ -148,7 +164,8 @@ form button:hover {
   text-align: center;
 }
 
-.loader.visible {
-  display: block;
 
+
+.loader.is-hidden {
+  display: none;
 }
